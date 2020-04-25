@@ -1,0 +1,28 @@
+{
+  "type": "module",
+  "name": "lox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lox.js",
+  "devDependencies": {
+    "@babel/cli": "7.8.4",
+    "@babel/core": "7.9.0",
+    "@babel/preset-flow": "7.9.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.1.0",
+    "eslint-plugin-flowtype": "4.7.0",
+    "eslint-plugin-import": "2.20.2",
+    "flow-bin": "0.123.0",
+    "flow-watch": "1.1.5"
+  },
+  "scripts": {
+    "babel": "babel src -d lib",
+    "generate": "rm src/Expr.js src/Stmt.js; npm run babel && node lib/tools/generate_ast src"
+  },
+  "author": "Florian Cargoët",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "7.8.3"
+  }
+}

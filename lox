@@ -1,0 +1,3 @@
+#!/bin/sh
+npm run babel
+node --no-warnings lib/lox.js "$@"

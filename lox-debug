@@ -1,0 +1,4 @@
+#!/bin/sh
+npm run babel
+node --inspect-brk lib/lox.js "$@"
+
